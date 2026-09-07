@@ -2,7 +2,19 @@ const songs = [
   {id:"4uLU6hMCjMI75M1A2tKUQC",title:"Never Gonna Give You Up",artist:"Rick Astley",album:"Whenever You Need Somebody",duration:"3:32",icon:"♪",a:"#d94d73",b:"#5a45aa",embed:"https://open.spotify.com/embed/track/4uLU6hMCjMI75M1A2tKUQC",lyrics:"Demo lyrics — replace this text with lyrics you are licensed to display.\n\nAshiq Music keeps the lyrics beside the official Spotify player."},
   {id:"11dFghVXANMlKmJXsNCbNl",title:"Dreams",artist:"Fleetwood Mac",album:"Rumours",duration:"4:17",embed:"https://open.spotify.com/embed/track/11dFghVXANMlKmJXsNCbNl",icon:"♫",a:"#e19a45",b:"#4d6cc9",lyrics:"Demo lyrics — replace with licensed lyrics for this track.\n\nUse the Spotify embed for official playback."},
   {id:"0VjIjW4GlUZAMYd2vXMi3b",title:"Blinding Lights",artist:"The Weeknd",album:"After Hours",duration:"3:20",embed:"https://open.spotify.com/embed/track/0VjIjW4GlUZAMYd2vXMi3b",icon:"♪",a:"#e43f67",b:"#e99b4b",lyrics:"Demo lyrics — replace with licensed lyrics for this track.\n\nUse the Spotify embed for official playback."},
-  {id:"1mea3bSkSGXuIRvnydlB5b",title:"Take On Me",artist:"a-ha",album:"Hunting High and Low",duration:"3:48",embed:"https://open.spotify.com/embed/track/1mea3bSkSGXuIRvnydlB5b",icon:"♩",a:"#46b8a5",b:"#5367d9",lyrics:"Demo lyrics — replace with licensed lyrics for this track.\n\nThis is a frontend demo of the Ashiq Music experience."}
+  {id:"31VfHqUvcbjrfEKwtVV5KT",title:"Take On Me",artist:"a-ha",album:"Hunting High and Low",duration:"3:48",embed:"https://open.spotify.com/embed/track/31VfHqUvcbjrfEKwtVV5KT",icon:"♩",a:"#46b8a5",b:"#5367d9",lyrics:"
+    Tere bin main yun kaise jiya
+    Kaise jiya tere bin
+    Tere bin main yun kaise jiya
+    Kaise jiya tere bin
+    Lekar yaadien teri raatein meri kati
+    Lekar yaadien teri raatein meri kati
+    Mujhse baaten teri karti hai chandni
+    Tanha hai tujh bin raaten meri
+    Din mere din ke jaise nahi
+    Tanha badan tanha hai ruh nam meri aankhen rahe
+    Aaja mere ab rubaru
+    Jeena nahi bin tere"}
 ];
 
 const artists = [
