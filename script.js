@@ -5,11 +5,12 @@ const songs=[
 {id:"1mea3bSkSGXuIRvnydlB5b",title:"Take On Me",artist:"a-ha",album:"Hunting High and Low",duration:"3:48",icon:"♩",a:"#46b8a5",b:"#5367d9",lyrics:"Demo lyrics — replace with licensed lyrics for this track.\n\nThis is a frontend demo of the Ashiq Music experience."}
 ];
 const artists=[
-{name:"Rick Astley",genre:"Pop",icon:"R",a:"#d94d73",b:"#5a45aa"},
-{name:"Fleetwood Mac",genre:"Rock / Pop",icon:"F",a:"#e19a45",b:"#4d6cc9"},
-{name:"The Weeknd",genre:"R&B / Pop",icon:"W",a:"#e43f67",b:"#e99b4b"},
-{name:"a-ha",genre:"Synth-pop",icon:"A",a:"#46b8a5",b:"#5367d9"},
-{name:"Daft Punk",genre:"Electronic",icon:"D",a:"#8a5cf6",b:"#d94885"}
+  {name:"Atif Aslam",genre:"Bollywood",icon:"A",a:"#d94d73",b:"#5a45aa"},
+  {name:"Mustafa Zahid",genre:"Bollywood",icon:"A",a:"#e19a45",b:"#4d6cc9"},
+  {name:"Shreya Ghoshal",genre:"Indian Playback",icon:"S",a:"#e43f67",b:"#e99b4b"},
+  {name:"Palak Muchhal",genre:"Indian Playback",icon:"S",a:"#46b8a5",b:"#5367d9"},
+  {name:"Mithoon",genre:"Indian Playback",icon:"S",a:"#46b8a5",b:"#5367d9"},
+  {name:"Yuvan Shankar Raja",genre:"Tamil Music",icon:"Y",a:"#8a5cf6",b:"#d94885"}
 ];
 const $=s=>document.querySelector(s);
 function songCard(s){return `<article class="card" data-song="${s.id}"><div class="cover" style="--a:${s.a};--b:${s.b}">${s.icon}</div><div class="info"><strong>${s.title}</strong><span>${s.artist}</span></div></article>`}
