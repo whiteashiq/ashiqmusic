@@ -31,9 +31,21 @@
   <div id="homeArtists" class="artists"></div>
 </section>
 
-<section id="artists" class="page"><div class="title"><label>ARTISTS</label><h1>Find your sound</h1><p>Explore artists in your Ashiq Music collection.</p></div><div id="artistsGrid" class="artists big"></div></section>
+<section id="artists" class="page">
+<div class="title"><label>ARTISTS</label><h1>Find your sound</h1><p>Click an artist to open their profile and songs.</p></div>
+<div id="artistsGrid" class="artists big"></div>
+<div id="artistProfile" class="artist-profile">
+  <button id="closeArtist" class="profile-close">×</button>
+  <div class="artist-profile-top">
+    <div id="artistAvatar" class="profile-avatar">A</div>
+    <div><label>ARTIST PROFILE</label><h1 id="artistName">Artist</h1><p id="artistGenre">Genre</p><p id="artistBio">Bio</p></div>
+  </div>
+  <div class="artist-profile-heading"><h2>Popular Songs</h2><span>Click ▶ to play</span></div>
+  <div id="artistSongs" class="artist-songs"></div>
+</div>
+</section>
 
-<section id="songs" class="page"><div class="title"><label>SONGS</label><h1>Your soundtrack</h1><p>Choose a track to open its official Spotify player and lyrics.</p></div><div id="songsList" class="song-list"></div></section>
+<section id="songs" class="page"><div class="title"><label>SONGS</label><h1>Your soundtrack</h1><p>Choose a track, edit its Spotify Embed URL, then click Use Embed to load it in the player.</p></div><div id="songsList" class="song-list"></div></section>
 
 <section id="about" class="page"><div class="about"><div class="about-logo">A</div><div><label>ABOUT ASHIQ MUSIC</label><h1>Music made simple.</h1><p>Ashiq Music is a Spotify-inspired music discovery frontend built with HTML, CSS and JavaScript. It combines a clean music library with the official Spotify Embed Player and a dedicated lyrics experience.</p><div class="pills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Spotify Embed</span></div></div></div></section>
 
