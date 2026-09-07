@@ -6,7 +6,28 @@ const songs=[
 ];
 
 const artists=[
-{name:"Atif Aslam",genre:"Bollywood",icon:"A",a:"#d94d73",b:"#5a45aa",bio:"Pakistani playback singer known for Bollywood and South Asian music.",songs:["Tera Hone Laga Hoon","Jeene Laga Hoon","Dil Diyan Gallan"]},
+{
+  name:"Atif Aslam",
+  genre:"Bollywood",
+  icon:"A",
+  a:"#d94d73",
+  b:"#5a45aa",
+  bio:"Pakistani playback singer known for Bollywood and South Asian music.",
+  songs:[
+    {
+      title:"Tera Bin",
+      embed:"https://open.spotify.com/embed/track/31VfHqUvcbjrfEKwtVV5KT"
+    },
+    {
+      title:"Tera Hone Laga Hoon",
+      embed:"https://open.spotify.com/embed/track/0dLbrlAVPPjpPqnYfmJsWk"
+    },
+    {
+      title:"Dil Diyan Gallan",
+      embed:"https://open.spotify.com/embed/track/5MnAi6ZF7cE8pAz7wYr9Ta"
+    }
+  ]
+},
 {name:"Mustafa Zahid",genre:"Bollywood",icon:"M",a:"#e19a45",b:"#4d6cc9",bio:"Pakistani singer, songwriter and composer known for emotional Bollywood soundtracks.",songs:["Toh Phir Aao","Tera Mera Rishta","Bharam"]},
 {name:"Shreya Ghoshal",genre:"Indian Playback",icon:"S",a:"#e43f67",b:"#e99b4b",bio:"One of India's most celebrated playback singers.",songs:["Teri Ore","Manwa Laage","Deewani Mastani"]},
 {name:"Palak Muchhal",genre:"Indian Playback",icon:"P",a:"#46b8a5",b:"#5367d9",bio:"Indian playback singer known for Hindi film songs and melodic performances.",songs:["Kaun Tujhe","Meri Aashiqui","Chahun Main Ya Naa"]},
