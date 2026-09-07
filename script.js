@@ -119,7 +119,6 @@ function openArtist(name){
 
       </div>
     `;
-
   }).join("");
 
   $("#artistProfile").classList.add("show");
@@ -129,26 +128,7 @@ function openArtist(name){
     block:"start"
   });
 }
- const a=artists.find(x=>x.name===name); if(!a)return;
- $("#artistName").textContent=a.name;
- $("#artistGenre").textContent=a.genre;
- $("#artistBio").textContent=a.bio;
- $("#artistAvatar").textContent=a.icon;
- $("#artistAvatar").style.setProperty("--a",a.a);
- $("#artistAvatar").style.setProperty("--b",a.b);
- $("#artistSongs").innerHTML=a.songs.map((name,i)=>{
-   const linked=songs.find(s=>s.title.toLowerCase()===name.toLowerCase() || s.artist.toLowerCase()===a.name.toLowerCase());
-   return `<div class="artist-song">
-     <div class="artist-song-num">${String(i+1).padStart(2,"0")}</div>
-     <div><strong>${name}</strong><span>${a.name}</span></div>
-     ${linked?`<button data-song="${linked.id}">▶</button>`:`<span class="unavailable">Spotify link not added</span>`}
-   </div>`;
- }).join("");
- $("#artistProfile").classList.add("show");
- $("#artistProfile").scrollIntoView({behavior:"smooth",block:"start"});
-}
 render();
-
 document.addEventListener("click", e => {
   const button = e.target.closest("[data-artist-embed]");
   if(!button) return;
