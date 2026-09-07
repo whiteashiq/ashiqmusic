@@ -84,6 +84,51 @@ function playSong(id){
  $("#player").scrollIntoView({behavior:"smooth",block:"start"});
 }
 function openArtist(name){
+  const a = artists.find(x => x.name === name);
+  if(!a) return;
+
+  $("#artistName").textContent = a.name;
+  $("#artistGenre").textContent = a.genre;
+  $("#artistBio").textContent = a.bio;
+
+  $("#artistAvatar").textContent = a.icon;
+  $("#artistAvatar").style.setProperty("--a", a.a);
+  $("#artistAvatar").style.setProperty("--b", a.b);
+
+  $("#artistSongs").innerHTML = a.songs.map((song, i) => {
+
+    return `
+      <div class="artist-song">
+
+        <div class="artist-song-num">
+          ${String(i + 1).padStart(2,"0")}
+        </div>
+
+        <div>
+          <strong>${song.title}</strong>
+          <span>${a.name}</span>
+        </div>
+
+        <button 
+          class="artist-play"
+          data-artist-embed="${song.embed}"
+          data-title="${song.title}"
+          data-artist="${a.name}">
+          ▶
+        </button>
+
+      </div>
+    `;
+
+  }).join("");
+
+  $("#artistProfile").classList.add("show");
+
+  $("#artistProfile").scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+}
  const a=artists.find(x=>x.name===name); if(!a)return;
  $("#artistName").textContent=a.name;
  $("#artistGenre").textContent=a.genre;
@@ -104,8 +149,31 @@ function openArtist(name){
 }
 render();
 
-document.addEventListener("click",e=>{
- const nav=e.target.closest("[data-section]"); if(nav)showSection(nav.dataset.section);
+document.addEventListener("click", e => {
+  const button = e.target.closest("[data-artist-embed]");
+  if(!button) return;
+  const embedUrl = button.dataset.artistEmbed;
+  const title = button.dataset.title;
+  const artist = button.dataset.artist;
+
+  $("#nowTitle").textContent = title;
+  $("#nowArtist").textContent = artist;
+
+  $("#frame").src =
+    embedUrl + "?utm_source=generator&theme=0";
+
+  $("#lyricsText").textContent =
+    "Lyrics will appear here when you add licensed lyrics for this song.";
+
+  $("#status").textContent = "Demo / licensed text";
+
+  $("#player").style.display = "block";
+
+  $("#player").scrollIntoView({
+    behavior:"smooth",
+    block:"start"
+  });
+  const nav=e.target.closest("[data-section]"); if(nav)showSection(nav.dataset.section);
  const go=e.target.closest("[data-go]"); if(go)showSection(go.dataset.go);
  const song=e.target.closest("[data-song]"); if(song)playSong(song.dataset.song);
  const artist=e.target.closest("[data-artist]"); if(artist)openArtist(artist.dataset.artist);
